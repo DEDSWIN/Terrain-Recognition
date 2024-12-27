@@ -33,7 +33,7 @@ Each subfolder (e.g., `Grassy`, `Marshy`, `Rocky`, `Sandy`) contains relevant im
    ```
 
 2. **Upload the Dataset:**
-   - Place the `data.zip` file in the runtime environment.
+   - First upload the `data.zip` file in the gdrive of same g account of colab. ( adjust paths in code)
 
 3. **Run the Code:**
    - Execute the `terrain_recognition.ipynb` notebook.
