@@ -28,7 +28,7 @@ Each subfolder (e.g., `Grassy`, `Marshy`, `Rocky`, `Sandy`) contains relevant im
 ## Installation and Setup
 1. **Clone the Repository:**
    ```bash
-   git clone <repository_link>
+   git clone <https://github.com/DEDSWIN/Terrain-Recognition>
    cd terrain-recognition
    ```
 
@@ -53,47 +53,28 @@ The CNN model comprises:
 
 ### 3. Training and Validation
 - The model is trained using the **Adam optimizer** and **categorical crossentropy** loss.
-- Early stopping is implemented to halt training when validation performance ceases to improve.
+- Early stopping is implemented to halt training when validation performance ceases to improve.(although all epochs ran improving validation performance.)(If anyone trains again ; do more epochs)
 
-### 4. Evaluation
-- The model is tested on unseen data to measure accuracy.
-- A **classification report** and **confusion matrix** are generated to analyze performance.
 
-## Results
+## Evaluation Results
 - **Accuracy:** The model achieves high accuracy on the test dataset, demonstrating its effectiveness in terrain classification.
 - **Performance Visualizations:**
-  - Training and validation accuracy/loss curves.
-  - Confusion matrix to visualize class-wise performance.
+  - ![image](https://github.com/user-attachments/assets/8f143e74-5692-4d0c-bb84-11b89e41649e)
 
-## Usage
+  - ![Confusion Matrix](https://github.com/user-attachments/assets/83e486cf-9730-4cc8-9c0c-e095d5d84222)
+
+### Classification Report
+![Classification report](https://github.com/user-attachments/assets/89cbb63c-894c-4367-8186-3977e444ed60)
+
+
+## Usage and Improvements
 - **Deployable Model:** This lightweight model can be integrated into drone systems for real-time terrain recognition.
 - **Extensibility:** The architecture can be further enhanced by adding more classes or incorporating advanced features like transfer learning.
-
-## Example Output
-### Classification Report
-```
-              precision    recall  f1-score   support
-    Grassy       0.95       0.96      0.95       100
-    Marshy       0.93       0.92      0.92       100
-    Rocky        0.94       0.91      0.92       100
-    Sandy        0.92       0.95      0.93       100
-
-   accuracy                           0.93       400
-  macro avg       0.93       0.93      0.93       400
-weighted avg       0.93       0.93      0.93       400
-```
-
-### Confusion Matrix
-![Confusion Matrix](confusion_matrix.png)
-
-## Future Improvements
 - Implement transfer learning using pre-trained models like VGG16 or ResNet.
 - Optimize the model for better performance on low-resource devices.
 - Expand dataset with diverse terrains and environmental conditions.
+- Do more epochs next time.
 
 ## Credits
 This project was developed as part of the **Smart India Hackathon** problem statement for autonomous systems.
-
-## License
-This project is licensed under the MIT License. See the LICENSE file for details.
 
